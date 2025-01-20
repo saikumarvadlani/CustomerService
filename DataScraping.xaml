@@ -119,13 +119,13 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DataScraping" sap:VirtualizedContainerService.HintSize="651,253.824" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DataScraping" sap:VirtualizedContainerService.HintSize="827,4911" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Loop Forms and extract required data &quot;Name, Email,Categories, Description&quot;" sap:VirtualizedContainerService.HintSize="624,4466" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Loop Forms and extract required data &quot;Name, Email,Categories, Description&quot;" sap:VirtualizedContainerService.HintSize="624,4888" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="DtCustomerData" />
         <Variable x:TypeArguments="x:String" Name="StrCID" />
@@ -133,11 +133,11 @@
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="590,4383" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="590,4805" sap2010:WorkflowViewState.IdRef="TryCatch_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -145,7 +145,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="588,3810" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="588,4209" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -181,7 +181,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <ui:ForEachFileX sap2010:Annotation.AnnotationText="Static Web Pages are created and stored in folder names &quot;Forms&quot; " DisplayName="For Each File in Folder" Folder="Forms" sap:VirtualizedContainerService.HintSize="554,2851" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+            <ui:ForEachFileX sap2010:Annotation.AnnotationText="Static Web Pages are created and stored in folder names &quot;Forms&quot; " DisplayName="For Each File in Folder" Folder="Forms" sap:VirtualizedContainerService.HintSize="554,3250" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
               <ui:ForEachFileX.Body>
                 <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                   <ActivityAction.Argument1>
@@ -190,7 +190,7 @@
                   <ActivityAction.Argument2>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                   </ActivityAction.Argument2>
-                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="520,2523" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="520,2922" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                     <TryCatch.Variables>
                       <Variable x:TypeArguments="x:String" Name="StrName" />
                       <Variable x:TypeArguments="x:String" Name="StrEmail" />
@@ -202,7 +202,7 @@
                       <Variable x:TypeArguments="x:String" Name="StrCustomerCaseID" />
                     </TryCatch.Variables>
                     <TryCatch.Try>
-                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,1888" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,2287" sap2010:WorkflowViewState.IdRef="Sequence_3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -267,13 +267,13 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </Assign>
-                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Betsson Customer Service Request View" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7aa22823-cbba-4fb8-af27-fdebc9f07c1e" Version="V2" WindowResize="Maximize">
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Betsson Customer Service Request View" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1065" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7aa22823-cbba-4fb8-af27-fdebc9f07c1e" Version="V2" WindowResize="Maximize">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,416" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,815" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -281,9 +281,9 @@
                                 </sap:WorkflowViewStateService.ViewState>
                                 <uix:NGetText DisplayName="Get Text 'Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="7aa22823-cbba-4fb8-af27-fdebc9f07c1e" TextString="[StrName]" Version="V4">
                                   <uix:NGetText.Target>
-                                    <uix:TargetAnchorable BrowserURL="" CVScreenId="ac3b4711-9451-4410-8c5e-5ea3a5278ba5" CvElementArea="877, 494, 1252, 80" CvType="InputBox" DesignTimeRectangle="883, 498, 1244, 76" DesignTimeScaleFactor="2" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='name' tag='INPUT' type='text' class='' aaname='Name' /&gt;" Guid="55437e93-baf2-430f-8e5a-70a1d29447f8" InformativeScreenshot="5ef566070312e79ae81ccd0f2ea2412a.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Betsson Customer Service Request View' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                                    <uix:TargetAnchorable BrowserURL="" CVScreenId="ac3b4711-9451-4410-8c5e-5ea3a5278ba5" CvElementArea="877, 494, 1252, 80" CvType="InputBox" DesignTimeRectangle="883, 498, 1244, 76" DesignTimeScaleFactor="2" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='name' tag='INPUT' type='text' class='' aaname='Name' /&gt;" Guid="55437e93-baf2-430f-8e5a-70a1d29447f8" InformativeScreenshot="639a1e5f8d0b45cebcc832aa027b5f69.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Betsson Customer Service Request View' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
                                           <uix:Target CVScreenId="ac3b4711-9451-4410-8c5e-5ea3a5278ba5" CvTextArea="881, 453, 90, 28" CvTextArgument="Name" CvType="Text" DesignTimeRectangle="883, 451, 1200, 37" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Name' check:innerText='Name' /&gt;" Guid="40fe2244-5c3c-426a-b3c3-c475e798a486" SearchSteps="FuzzySelector, CV" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
@@ -296,53 +296,53 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NGetText>
-                                <uix:NGetText DisplayName="Get Text 'Email'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="7aa22823-cbba-4fb8-af27-fdebc9f07c1e" TextString="[StrEmail]" Version="V4">
+                                <uix:NGetText DisplayName="Get Text 'Email'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="7aa22823-cbba-4fb8-af27-fdebc9f07c1e" TextString="[StrEmail]" Version="V4">
                                   <uix:NGetText.Target>
-                                    <uix:TargetAnchorable BrowserURL="" CVScreenId="657ec65e-1411-4513-9e15-4830bbf08017" ContentHash="W40nfRWV50-TJ1nwYfbuLg" CvElementArea="879, 558, 1250, 78" CvType="InputBox" DesignTimeRectangle="879, 558, 1250, 78" DesignTimeScaleFactor="2" ElementType="InputBox" Guid="48e83d67-83fd-4916-a792-00a8a78f81ad" InformativeScreenshot="d3dd87a2af611b970072ded528bbcf1a.png" IsResponsive="True" Reference="EWOKHPIj2UKyWdFIczx8eA/Vq0lWQeq-0-h4hjaW5F7iA" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Betsson Customer Service Request View - School - Microsoft​ Edge' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                                    <uix:TargetAnchorable BrowserURL="" CVScreenId="657ec65e-1411-4513-9e15-4830bbf08017" ContentHash="W40nfRWV50-TJ1nwYfbuLg" CvElementArea="879, 558, 1250, 78" CvType="InputBox" DesignTimeRectangle="883, 649, 1246, 78" DesignTimeScaleFactor="2" ElementType="InputBox" Guid="48e83d67-83fd-4916-a792-00a8a78f81ad" InformativeScreenshot="854f8fe2b0a0adfe73192fe8da1496b4.png" IsResponsive="True" Reference="EWOKHPIj2UKyWdFIczx8eA/Vq0lWQeq-0-h4hjaW5F7iA" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Betsson Customer Service Request View - School - Microsoft​ Edge' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                          <uix:Target CVScreenId="657ec65e-1411-4513-9e15-4830bbf08017" CvTextArea="881, 517, 88, 28" CvTextArgument="Email" CvType="Text" DesignTimeRectangle="881, 517, 88, 28" ElementType="Text" Guid="57e6b172-b716-44d7-9125-aba8a4b3c2af" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <uix:Target CVScreenId="657ec65e-1411-4513-9e15-4830bbf08017" CvTextArea="881, 517, 88, 28" CvTextArgument="Email" CvType="Text" DesignTimeRectangle="881, 605, 88, 30" ElementType="Text" Guid="57e6b172-b716-44d7-9125-aba8a4b3c2af" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NGetText.Target>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NGetText>
-                                <uix:NGetText DisplayName="Get Text 'Issue Category'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="7aa22823-cbba-4fb8-af27-fdebc9f07c1e" TextString="[StrCategory]" Version="V4">
+                                <uix:NGetText DisplayName="Get Text 'Issue Category'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="7aa22823-cbba-4fb8-af27-fdebc9f07c1e" TextString="[StrCategory]" Version="V4">
                                   <uix:NGetText.Target>
-                                    <uix:TargetAnchorable BrowserURL="" CVScreenId="657ec65e-1411-4513-9e15-4830bbf08017" ContentHash="YhU4lrEq4EuSGhBMJLwZTQ" CvElementArea="878, 711, 1254, 79" CvType="InputBox" DesignTimeRectangle="878, 711, 1254, 79" DesignTimeScaleFactor="2" ElementType="InputBox" Guid="fb78c173-9cf2-48b1-9d6a-aa46b2d0644e" InformativeScreenshot="ed5d1b63d172b62e30cda47038840220.png" IsResponsive="True" Reference="EWOKHPIj2UKyWdFIczx8eA/3zzpVeP-Ck6E5zEZ2JlztA" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Betsson Customer Service Request View - School - Microsoft​ Edge' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                                    <uix:TargetAnchorable BrowserURL="" CVScreenId="657ec65e-1411-4513-9e15-4830bbf08017" ContentHash="YhU4lrEq4EuSGhBMJLwZTQ" CvElementArea="878, 711, 1254, 79" CvType="InputBox" DesignTimeRectangle="876, 802, 1255, 78" DesignTimeScaleFactor="2" ElementType="InputBox" Guid="fb78c173-9cf2-48b1-9d6a-aa46b2d0644e" InformativeScreenshot="22e744dfc41bd757a83957435e799afb.png" IsResponsive="True" Reference="EWOKHPIj2UKyWdFIczx8eA/3zzpVeP-Ck6E5zEZ2JlztA" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Betsson Customer Service Request View - School - Microsoft​ Edge' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                          <uix:Target CVScreenId="657ec65e-1411-4513-9e15-4830bbf08017" CvTextArea="881, 669, 232, 36" CvTextArgument="Issue Category" CvType="Text" DesignTimeRectangle="881, 669, 232, 36" ElementType="Text" Guid="b48267c9-f544-4972-925d-bf8af922b694" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <uix:Target CVScreenId="657ec65e-1411-4513-9e15-4830bbf08017" CvTextArea="881, 669, 232, 36" CvTextArgument="Issue Category" CvType="Text" DesignTimeRectangle="881, 759, 232, 36" ElementType="Text" Guid="b48267c9-f544-4972-925d-bf8af922b694" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NGetText.Target>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NGetText>
-                                <uix:NGetText DisplayName="Get Text 'Issue Category'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="7aa22823-cbba-4fb8-af27-fdebc9f07c1e" TextString="[StrDescription]" Version="V4">
+                                <uix:NGetText DisplayName="Get Text 'Issue Category'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,183" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="7aa22823-cbba-4fb8-af27-fdebc9f07c1e" TextString="[StrDescription]" Version="V4">
                                   <uix:NGetText.Target>
-                                    <uix:TargetAnchorable BrowserURL="" CVScreenId="657ec65e-1411-4513-9e15-4830bbf08017" ContentHash="9QPENp7PaUaSjmIF2ml1kg" CvElementArea="878, 863, 1251, 245" CvType="InputBox" DesignTimeRectangle="878, 863, 1251, 245" DesignTimeScaleFactor="2" ElementType="InputBox" Guid="e7687504-d3c8-4da1-8c8f-382a3e2e6fc9" InformativeScreenshot="6b3041a6933a5cf57982804141b109e7.png" IsResponsive="True" Reference="EWOKHPIj2UKyWdFIczx8eA/_l2frkTfskuVVFF-lsZfCw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Betsson Customer Service Request View - School - Microsoft​ Edge' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+                                    <uix:TargetAnchorable BrowserURL="" CVScreenId="657ec65e-1411-4513-9e15-4830bbf08017" ContentHash="9QPENp7PaUaSjmIF2ml1kg" CvElementArea="878, 863, 1251, 245" CvType="InputBox" DesignTimeRectangle="878, 956, 1250, 243" DesignTimeScaleFactor="2" ElementType="InputBox" Guid="e7687504-d3c8-4da1-8c8f-382a3e2e6fc9" InformativeScreenshot="a76d6c1dbd40bad4faf6abc941b6abdf.png" IsResponsive="True" Reference="EWOKHPIj2UKyWdFIczx8eA/_l2frkTfskuVVFF-lsZfCw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Betsson Customer Service Request View - School - Microsoft​ Edge' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                          <uix:Target CVScreenId="657ec65e-1411-4513-9e15-4830bbf08017" CvTextArea="881, 821, 268, 36" CvTextArgument="Issue Description" CvType="Text" DesignTimeRectangle="881, 821, 268, 36" ElementType="Text" Guid="c3bd08d0-d518-4cdf-9323-3cc589f49ea3" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <uix:Target CVScreenId="657ec65e-1411-4513-9e15-4830bbf08017" CvTextArea="881, 821, 268, 36" CvTextArgument="Issue Description" CvType="Text" DesignTimeRectangle="881, 911, 268, 36" ElementType="Text" Guid="c3bd08d0-d518-4cdf-9323-3cc589f49ea3" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
                                   </uix:NGetText.Target>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>

@@ -12,7 +12,17 @@
 
 ## Introduction
 
-Some introductions...
+This documentation outlines the implementation of an automated workflow for processing customer issue submissions. The solution combines the power of an RPA tool (e.g., UiPath, Automation Anywhere, or Blue Prism) with advanced AI capabilities to ensure efficient data extraction, categorization, email automation, and logging. By integrating AI-based NLP models, the workflow achieves enhanced accuracy and personalization in issue categorization.
+
+The key features of the solution include:
+
+1. Data Extraction: Automates the extraction of customer-submitted data from a web form, ensuring accurate and structured input processing.
+2. AI-Driven Categorization: Utilizes pre-trained NLP models (e.g., OpenAI GPT or Hugging Face BERT) to classify and suggest precise subcategories for issues based on context.
+3. Personalized Email Automation: Sends acknowledgment emails to customers, including a unique case number and AI-generated subcategory for a tailored response.
+4. Data Logging: Records extracted and processed data in a structured format (CSV or database) for auditing and reporting purposes.
+5. Error Handling: Implements robust error-handling mechanisms to manage missing data, invalid inputs, and ambiguous issue descriptions.
+
+This document serves as a comprehensive guide to setting up and running the solution, covering the workflow design, AI integration, and any technical considerations. By following this documentation, users can replicate and deploy the workflow in their environments efficiently.
 
 ## Required Tools
 
@@ -31,7 +41,7 @@ Some introductions...
 1. Clone this repository to you desired path.
 
    ```shell
-   git clone http://github.com/sai-ka-land/nahi-kahada-hota.git
+   git clone https://github.com/saikumarvadlani/CustomerService.git
    ```
 
 2. Install python dependencies.
