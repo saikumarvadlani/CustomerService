@@ -76,6 +76,7 @@ This document serves as a comprehensive guide to setting up and running the solu
    | GmailClientSecret | <GOOGLE_CLIENT_SECRET>                         |
    | PythonLibrary     | C:\path\to\your\python\python310\python310.dll |
    | PythonAppPath     | C:\path\to\your\python\python310               |
+   | PartOfProject     | "1" for first part of the Requirements and "2" for updated workflow of requirements document            |
 
    > Other keys are preconfigured and no need to update them.
 
