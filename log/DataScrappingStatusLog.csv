@@ -897,3 +897,233 @@ CS2025_00168;Wendy; wendy.green@example.com; General; Do you provide training fo
 CS2025_00169;Xavier; xavier.hill@example.com; Technical; I can't access my account because of a two-factor authentication issue.; Python Sub Categories ;Success;;01/20/2025 13:43:07
 CS2025_00170;Yolanda; yolanda.hughes@example.com; Billing; How can I get a detailed breakdown of my charges for the last six months?; Python Sub Categories ;Success;;01/20/2025 13:43:08
 CS2025_00171;Zachary; zachary.perez@example.com; General; Does your service offer multi - language support?; Python Sub Categories ;Success;;01/20/2025 13:43:09
+CS2025_00001;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.;Data Extraction from Form;Success;01/20/2025 14:34:31
+CS2025_00002;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.;Data Extraction from Form;Success;01/20/2025 14:34:44
+CS2025_00003;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.;Data Extraction from Form;Success;01/20/2025 14:34:55
+CS2025_00004;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.;Data Extraction from Form;Success;01/20/2025 14:35:08
+CS2025_00005;Catherine; catherine.martin@example.com; General; What security features are included in your software?;Data Extraction from Form;Success;01/20/2025 14:35:18
+CS2025_00006;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?;Data Extraction from Form;Success;01/20/2025 14:35:28
+CS2025_00007;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.;Data Extraction from Form;Success;01/20/2025 14:35:39
+CS2025_00008;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.;Data Extraction from Form;Success;01/20/2025 14:35:50
+CS2025_00009;Emma; emma.brown@example.com; Billing; I need a copy of my last three invoices for reimbursement purposes.;Data Extraction from Form;Success;01/20/2025 14:35:59
+CS2025_00010;Frank; frank.harris@example.com; General; What are your customer service operating hours?;Data Extraction from Form;Success;01/20/2025 14:36:10
+CS2025_00011;Grace; grace.wilson@example.com; Technical; My mobile app keeps crashing whenever I try to open the settings page.;Data Extraction from Form;Success;01/20/2025 14:36:20
+CS2025_00012;Harry; harry.adams@example.com; Billing; I accidentally made a duplicate payment. Can I get a refund?;Data Extraction from Form;Success;01/20/2025 14:36:31
+CS2025_00013;Isabella; isabella.white@example.com; General; Can I change my subscription plan mid-cycle without penalties?;Data Extraction from Form;Success;01/20/2025 14:36:44
+CS2025_00014;Jack; jack.davis@example.com; Technical; I am experiencing connectivity issues with your cloud service.;Data Extraction from Form;Success;01/20/2025 14:36:56
+CS2025_00015;Karen; karen.mitchell@example.com; Billing; My subscription renewal failed, and my account is deactivated.;Data Extraction from Form;Success;01/20/2025 14:37:06
+CS2025_00016;Liam; liam.robinson@example.com; Technical; The software update failed to install on my device.;Data Extraction from Form;Success;01/20/2025 14:37:16
+CS2025_00017;Mia; mia.scott@example.com; General; Do you have a physical store near my location?;Data Extraction from Form;Success;01/20/2025 14:37:32
+CS2025_00018;Noah; noah.walker@example.com; Technical; I need help configuring my email on a new device.;Data Extraction from Form;Success;01/20/2025 14:37:47
+CS2025_00019;Olivia; olivia.young@example.com; Billing; Can I split my annual payment into monthly installments?;Data Extraction from Form;Success;01/20/2025 14:38:01
+CS2025_00020;Paul; paul.baker@example.com; Technical; I am unable to reset my password due to an error.;Data Extraction from Form;Success;01/20/2025 14:38:17
+CS2025_00021;Quinn; quinn.moore@example.com; General; Can you explain the differences between your plans?;Data Extraction from Form;Success;01/20/2025 14:38:31
+CS2025_00022;Rachel; rachel.thomas@example.com; Billing; Why was I charged twice for the same transaction?;Data Extraction from Form;Success;01/20/2025 14:38:45
+CS2025_00023;Sophia; sophia.hernandez@example.com; Technical; My printer isn't connecting to the Wi-Fi network.;Data Extraction from Form;Success;01/20/2025 14:38:58
+CS2025_00024;Tom; tom.wilson@example.com; General; Is there a user manual for your latest product?;Data Extraction from Form;Success;01/20/2025 14:39:10
+CS2025_00025;Uma; uma.carter@example.com; Technical; The application freezes when I try to upload large files.;Data Extraction from Form;Success;01/20/2025 14:39:21
+CS2025_00026;Victor; victor.evans@example.com; Billing; I need assistance updating my payment method for my account.;Data Extraction from Form;Success;01/20/2025 14:39:32
+CS2025_00027;Wendy; wendy.green@example.com; General; Do you provide training for your enterprise software?;Data Extraction from Form;Success;01/20/2025 14:39:44
+CS2025_00028;Xavier; xavier.hill@example.com; Technical; I can't access my account because of a two-factor authentication issue.;Data Extraction from Form;Success;01/20/2025 14:39:55
+CS2025_00029;Yolanda; yolanda.hughes@example.com; Billing; How can I get a detailed breakdown of my charges for the last six months?;Data Extraction from Form;Success;01/20/2025 14:40:07
+CS2025_00030;Zachary; zachary.perez@example.com; General; Does your service offer multi - language support?;Data Extraction from Form;Success;01/20/2025 14:40:18
+CS2025_00001;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00001;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00002;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00002;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00003;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00003;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00004;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00004;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00005;Catherine; catherine.martin@example.com; General; What security features are included in your software?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00005;Catherine; catherine.martin@example.com; General; What security features are included in your software?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00006;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00006;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00007;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00007;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00008;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00008;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00009;Emma; emma.brown@example.com; Billing; I need a copy of my last three invoices for reimbursement purposes.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00009;Emma; emma.brown@example.com; Billing; I need a copy of my last three invoices for reimbursement purposes.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00010;Frank; frank.harris@example.com; General; What are your customer service operating hours?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00010;Frank; frank.harris@example.com; General; What are your customer service operating hours?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00011;Grace; grace.wilson@example.com; Technical; My mobile app keeps crashing whenever I try to open the settings page.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00011;Grace; grace.wilson@example.com; Technical; My mobile app keeps crashing whenever I try to open the settings page.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00012;Harry; harry.adams@example.com; Billing; I accidentally made a duplicate payment. Can I get a refund?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00012;Harry; harry.adams@example.com; Billing; I accidentally made a duplicate payment. Can I get a refund?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00013;Isabella; isabella.white@example.com; General; Can I change my subscription plan mid-cycle without penalties?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00013;Isabella; isabella.white@example.com; General; Can I change my subscription plan mid-cycle without penalties?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00014;Jack; jack.davis@example.com; Technical; I am experiencing connectivity issues with your cloud service.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00014;Jack; jack.davis@example.com; Technical; I am experiencing connectivity issues with your cloud service.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00015;Karen; karen.mitchell@example.com; Billing; My subscription renewal failed, and my account is deactivated.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00015;Karen; karen.mitchell@example.com; Billing; My subscription renewal failed, and my account is deactivated.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00016;Liam; liam.robinson@example.com; Technical; The software update failed to install on my device.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00016;Liam; liam.robinson@example.com; Technical; The software update failed to install on my device.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00017;Mia; mia.scott@example.com; General; Do you have a physical store near my location?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00017;Mia; mia.scott@example.com; General; Do you have a physical store near my location?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00018;Noah; noah.walker@example.com; Technical; I need help configuring my email on a new device.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00018;Noah; noah.walker@example.com; Technical; I need help configuring my email on a new device.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00019;Olivia; olivia.young@example.com; Billing; Can I split my annual payment into monthly installments?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00019;Olivia; olivia.young@example.com; Billing; Can I split my annual payment into monthly installments?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00020;Paul; paul.baker@example.com; Technical; I am unable to reset my password due to an error.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00020;Paul; paul.baker@example.com; Technical; I am unable to reset my password due to an error.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00021;Quinn; quinn.moore@example.com; General; Can you explain the differences between your plans?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00021;Quinn; quinn.moore@example.com; General; Can you explain the differences between your plans?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00022;Rachel; rachel.thomas@example.com; Billing; Why was I charged twice for the same transaction?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00022;Rachel; rachel.thomas@example.com; Billing; Why was I charged twice for the same transaction?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00023;Sophia; sophia.hernandez@example.com; Technical; My printer isn't connecting to the Wi-Fi network.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00023;Sophia; sophia.hernandez@example.com; Technical; My printer isn't connecting to the Wi-Fi network.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00024;Tom; tom.wilson@example.com; General; Is there a user manual for your latest product?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00024;Tom; tom.wilson@example.com; General; Is there a user manual for your latest product?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00025;Uma; uma.carter@example.com; Technical; The application freezes when I try to upload large files.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00025;Uma; uma.carter@example.com; Technical; The application freezes when I try to upload large files.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00026;Victor; victor.evans@example.com; Billing; I need assistance updating my payment method for my account.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00026;Victor; victor.evans@example.com; Billing; I need assistance updating my payment method for my account.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00027;Wendy; wendy.green@example.com; General; Do you provide training for your enterprise software?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00027;Wendy; wendy.green@example.com; General; Do you provide training for your enterprise software?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00028;Xavier; xavier.hill@example.com; Technical; I can't access my account because of a two-factor authentication issue.;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00028;Xavier; xavier.hill@example.com; Technical; I can't access my account because of a two-factor authentication issue.;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00029;Yolanda; yolanda.hughes@example.com; Billing; How can I get a detailed breakdown of my charges for the last six months?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00029;Yolanda; yolanda.hughes@example.com; Billing; How can I get a detailed breakdown of my charges for the last six months?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00030;Zachary; zachary.perez@example.com; General; Does your service offer multi - language support?;Email Validation;Success;01/20/2025 14:40:20
+CS2025_00030;Zachary; zachary.perez@example.com; General; Does your service offer multi - language support?;Name Validation;Success;01/20/2025 14:40:20
+CS2025_00001;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.; Python Sub Categories ;Success;;01/20/2025 14:40:29
+CS2025_00002;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.; Python Sub Categories ;Success;;01/20/2025 14:40:30
+CS2025_00003;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.; Python Sub Categories ;Success;;01/20/2025 14:40:30
+CS2025_00004;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.; Python Sub Categories ;Success;;01/20/2025 14:40:31
+CS2025_00005;Catherine; catherine.martin@example.com; General; What security features are included in your software?; Python Sub Categories ;Success;;01/20/2025 14:40:32
+CS2025_00006;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?; Python Sub Categories ;Success;;01/20/2025 14:40:32
+CS2025_00007;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.; Python Sub Categories ;Success;;01/20/2025 14:40:33
+CS2025_00008;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.; Python Sub Categories ;Success;;01/20/2025 14:40:34
+CS2025_00009;Emma; emma.brown@example.com; Billing; I need a copy of my last three invoices for reimbursement purposes.; Python Sub Categories ;Success;;01/20/2025 14:40:35
+CS2025_00010;Frank; frank.harris@example.com; General; What are your customer service operating hours?; Python Sub Categories ;Success;;01/20/2025 14:40:36
+CS2025_00011;Grace; grace.wilson@example.com; Technical; My mobile app keeps crashing whenever I try to open the settings page.; Python Sub Categories ;Success;;01/20/2025 14:40:36
+CS2025_00012;Harry; harry.adams@example.com; Billing; I accidentally made a duplicate payment. Can I get a refund?; Python Sub Categories ;Success;;01/20/2025 14:40:37
+CS2025_00013;Isabella; isabella.white@example.com; General; Can I change my subscription plan mid-cycle without penalties?; Python Sub Categories ;Success;;01/20/2025 14:40:37
+CS2025_00014;Jack; jack.davis@example.com; Technical; I am experiencing connectivity issues with your cloud service.; Python Sub Categories ;Success;;01/20/2025 14:40:38
+CS2025_00015;Karen; karen.mitchell@example.com; Billing; My subscription renewal failed, and my account is deactivated.; Python Sub Categories ;Success;;01/20/2025 14:40:39
+CS2025_00016;Liam; liam.robinson@example.com; Technical; The software update failed to install on my device.; Python Sub Categories ;Success;;01/20/2025 14:40:40
+CS2025_00017;Mia; mia.scott@example.com; General; Do you have a physical store near my location?; Python Sub Categories ;Success;;01/20/2025 14:40:41
+CS2025_00018;Noah; noah.walker@example.com; Technical; I need help configuring my email on a new device.; Python Sub Categories ;Success;;01/20/2025 14:40:41
+CS2025_00019;Olivia; olivia.young@example.com; Billing; Can I split my annual payment into monthly installments?; Python Sub Categories ;Success;;01/20/2025 14:40:42
+CS2025_00020;Paul; paul.baker@example.com; Technical; I am unable to reset my password due to an error.; Python Sub Categories ;Success;;01/20/2025 14:40:43
+CS2025_00021;Quinn; quinn.moore@example.com; General; Can you explain the differences between your plans?; Python Sub Categories ;Success;;01/20/2025 14:40:43
+CS2025_00022;Rachel; rachel.thomas@example.com; Billing; Why was I charged twice for the same transaction?; Python Sub Categories ;Success;;01/20/2025 14:40:44
+CS2025_00023;Sophia; sophia.hernandez@example.com; Technical; My printer isn't connecting to the Wi-Fi network.; Python Sub Categories ;Success;;01/20/2025 14:40:45
+CS2025_00024;Tom; tom.wilson@example.com; General; Is there a user manual for your latest product?; Python Sub Categories ;Success;;01/20/2025 14:40:46
+CS2025_00025;Uma; uma.carter@example.com; Technical; The application freezes when I try to upload large files.; Python Sub Categories ;Success;;01/20/2025 14:40:47
+CS2025_00026;Victor; victor.evans@example.com; Billing; I need assistance updating my payment method for my account.; Python Sub Categories ;Success;;01/20/2025 14:40:47
+CS2025_00027;Wendy; wendy.green@example.com; General; Do you provide training for your enterprise software?; Python Sub Categories ;Success;;01/20/2025 14:40:48
+CS2025_00028;Xavier; xavier.hill@example.com; Technical; I can't access my account because of a two-factor authentication issue.; Python Sub Categories ;Success;;01/20/2025 14:40:48
+CS2025_00029;Yolanda; yolanda.hughes@example.com; Billing; How can I get a detailed breakdown of my charges for the last six months?; Python Sub Categories ;Success;;01/20/2025 14:40:49
+CS2025_00030;Zachary; zachary.perez@example.com; General; Does your service offer multi - language support?; Python Sub Categories ;Success;;01/20/2025 14:40:49
+CS2025_00001;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.;Initial Email sent;Success;;01/20/2025 14:40:56
+CS2025_00002;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.;Initial Email sent;Success;;01/20/2025 14:40:57
+CS2025_00003;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.;Initial Email sent;Success;;01/20/2025 14:40:59
+CS2025_00004;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.;Initial Email sent;Success;;01/20/2025 14:41:00
+CS2025_00005;Catherine; catherine.martin@example.com; General; What security features are included in your software?;Initial Email sent;Success;;01/20/2025 14:41:01
+CS2025_00006;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?;Initial Email sent;Success;;01/20/2025 14:41:02
+CS2025_00007;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.;Initial Email sent;Success;;01/20/2025 14:41:03
+CS2025_00008;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.;Initial Email sent;Success;;01/20/2025 14:41:05
+CS2025_00009;Emma; emma.brown@example.com; Billing; I need a copy of my last three invoices for reimbursement purposes.;Initial Email sent;Success;;01/20/2025 14:41:06
+CS2025_00010;Frank; frank.harris@example.com; General; What are your customer service operating hours?;Initial Email sent;Success;;01/20/2025 14:41:07
+CS2025_00011;Grace; grace.wilson@example.com; Technical; My mobile app keeps crashing whenever I try to open the settings page.;Initial Email sent;Success;;01/20/2025 14:41:09
+CS2025_00012;Harry; harry.adams@example.com; Billing; I accidentally made a duplicate payment. Can I get a refund?;Initial Email sent;Success;;01/20/2025 14:41:10
+CS2025_00013;Isabella; isabella.white@example.com; General; Can I change my subscription plan mid-cycle without penalties?;Initial Email sent;Success;;01/20/2025 14:41:11
+CS2025_00014;Jack; jack.davis@example.com; Technical; I am experiencing connectivity issues with your cloud service.;Initial Email sent;Success;;01/20/2025 14:41:12
+CS2025_00015;Karen; karen.mitchell@example.com; Billing; My subscription renewal failed, and my account is deactivated.;Initial Email sent;Success;;01/20/2025 14:41:13
+CS2025_00016;Liam; liam.robinson@example.com; Technical; The software update failed to install on my device.;Initial Email sent;Success;;01/20/2025 14:41:15
+CS2025_00017;Mia; mia.scott@example.com; General; Do you have a physical store near my location?;Initial Email sent;Success;;01/20/2025 14:41:16
+CS2025_00018;Noah; noah.walker@example.com; Technical; I need help configuring my email on a new device.;Initial Email sent;Success;;01/20/2025 14:41:17
+CS2025_00019;Olivia; olivia.young@example.com; Billing; Can I split my annual payment into monthly installments?;Initial Email sent;Success;;01/20/2025 14:41:18
+CS2025_00020;Paul; paul.baker@example.com; Technical; I am unable to reset my password due to an error.;Initial Email sent;Success;;01/20/2025 14:41:20
+CS2025_00021;Quinn; quinn.moore@example.com; General; Can you explain the differences between your plans?;Initial Email sent;Success;;01/20/2025 14:41:21
+CS2025_00022;Rachel; rachel.thomas@example.com; Billing; Why was I charged twice for the same transaction?;Initial Email sent;Success;;01/20/2025 14:41:22
+CS2025_00023;Sophia; sophia.hernandez@example.com; Technical; My printer isn't connecting to the Wi-Fi network.;Initial Email sent;Success;;01/20/2025 14:41:24
+CS2025_00024;Tom; tom.wilson@example.com; General; Is there a user manual for your latest product?;Initial Email sent;Success;;01/20/2025 14:41:25
+CS2025_00025;Uma; uma.carter@example.com; Technical; The application freezes when I try to upload large files.;Initial Email sent;Success;;01/20/2025 14:41:26
+CS2025_00026;Victor; victor.evans@example.com; Billing; I need assistance updating my payment method for my account.;Initial Email sent;Success;;01/20/2025 14:41:28
+CS2025_00027;Wendy; wendy.green@example.com; General; Do you provide training for your enterprise software?;Initial Email sent;Success;;01/20/2025 14:41:29
+CS2025_00028;Xavier; xavier.hill@example.com; Technical; I can't access my account because of a two-factor authentication issue.;Initial Email sent;Success;;01/20/2025 14:41:30
+CS2025_00029;Yolanda; yolanda.hughes@example.com; Billing; How can I get a detailed breakdown of my charges for the last six months?;Initial Email sent;Success;;01/20/2025 14:41:32
+CS2025_00030;Zachary; zachary.perez@example.com; General; Does your service offer multi - language support?;Initial Email sent;Success;;01/20/2025 14:41:33
+CS2025_00031;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.;Data Extraction from Form;Success;01/20/2025 15:08:42
+CS2025_00032;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.;Data Extraction from Form;Success;01/20/2025 15:08:55
+CS2025_00033;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.;Data Extraction from Form;Success;01/20/2025 15:09:09
+CS2025_00034;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.;Data Extraction from Form;Success;01/20/2025 15:09:21
+CS2025_00035;Catherine; catherine.martin@example.com; General; What security features are included in your software?;Data Extraction from Form;Success;01/20/2025 15:09:33
+CS2025_00036;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?;Data Extraction from Form;Success;01/20/2025 15:09:46
+CS2025_00037;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.;Data Extraction from Form;Success;01/20/2025 15:09:58
+CS2025_00038;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.;Data Extraction from Form;Success;01/20/2025 15:10:10
+CS2025_00031;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.;Email Validation;Success;01/20/2025 15:10:13
+CS2025_00031;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.;Name Validation;Success;01/20/2025 15:10:13
+CS2025_00032;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.;Email Validation;Success;01/20/2025 15:10:13
+CS2025_00032;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.;Name Validation;Success;01/20/2025 15:10:13
+CS2025_00033;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.;Email Validation;Success;01/20/2025 15:10:13
+CS2025_00033;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.;Name Validation;Success;01/20/2025 15:10:13
+CS2025_00034;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.;Email Validation;Success;01/20/2025 15:10:13
+CS2025_00034;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.;Name Validation;Success;01/20/2025 15:10:13
+CS2025_00035;Catherine; catherine.martin@example.com; General; What security features are included in your software?;Email Validation;Success;01/20/2025 15:10:13
+CS2025_00035;Catherine; catherine.martin@example.com; General; What security features are included in your software?;Name Validation;Success;01/20/2025 15:10:13
+CS2025_00036;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?;Email Validation;Success;01/20/2025 15:10:13
+CS2025_00036;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?;Name Validation;Success;01/20/2025 15:10:13
+CS2025_00037;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.;Email Validation;Success;01/20/2025 15:10:13
+CS2025_00037;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.;Name Validation;Success;01/20/2025 15:10:13
+CS2025_00038;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.;Email Validation;Success;01/20/2025 15:10:13
+CS2025_00038;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.;Name Validation;Success;01/20/2025 15:10:13
+CS2025_00031;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.; Python Sub Categories ;Success;;01/20/2025 15:10:18
+CS2025_00032;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.; Python Sub Categories ;Success;;01/20/2025 15:10:19
+CS2025_00033;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.; Python Sub Categories ;Success;;01/20/2025 15:10:19
+CS2025_00034;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.; Python Sub Categories ;Success;;01/20/2025 15:10:20
+CS2025_00035;Catherine; catherine.martin@example.com; General; What security features are included in your software?; Python Sub Categories ;Success;;01/20/2025 15:10:21
+CS2025_00036;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?; Python Sub Categories ;Success;;01/20/2025 15:10:22
+CS2025_00037;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.; Python Sub Categories ;Success;;01/20/2025 15:10:23
+CS2025_00038;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.; Python Sub Categories ;Success;;01/20/2025 15:10:23
+CS2025_00031;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.;Additional Email sent;Success;;01/20/2025 15:10:27
+CS2025_00032;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.;Additional Email sent;Success;;01/20/2025 15:10:29
+CS2025_00033;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.;Additional Email sent;Success;;01/20/2025 15:10:30
+CS2025_00034;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.;Additional Email sent;Success;;01/20/2025 15:10:31
+CS2025_00035;Catherine; catherine.martin@example.com; General; What security features are included in your software?;Additional Email sent;Success;;01/20/2025 15:10:32
+CS2025_00036;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?;Additional Email sent;Success;;01/20/2025 15:10:34
+CS2025_00037;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.;Additional Email sent;Success;;01/20/2025 15:10:35
+CS2025_00038;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.;Additional Email sent;Success;;01/20/2025 15:10:36
+CS2025_00039;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.;Data Extraction from Form;Success;01/20/2025 15:15:20
+CS2025_00040;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.;Data Extraction from Form;Success;01/20/2025 15:15:36
+CS2025_00041;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.;Data Extraction from Form;Success;01/20/2025 15:15:49
+CS2025_00042;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.;Data Extraction from Form;Success;01/20/2025 15:15:59
+CS2025_00043;Catherine; catherine.martin@example.com; General; What security features are included in your software?;Data Extraction from Form;Success;01/20/2025 15:16:09
+CS2025_00044;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?;Data Extraction from Form;Success;01/20/2025 15:16:18
+CS2025_00045;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.;Data Extraction from Form;Success;01/20/2025 15:16:27
+CS2025_00046;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.;Data Extraction from Form;Success;01/20/2025 15:16:36
+CS2025_00039;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.;Email Validation;Success;01/20/2025 15:16:41
+CS2025_00039;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.;Name Validation;Success;01/20/2025 15:16:41
+CS2025_00040;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.;Email Validation;Success;01/20/2025 15:16:41
+CS2025_00040;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.;Name Validation;Success;01/20/2025 15:16:41
+CS2025_00041;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.;Email Validation;Success;01/20/2025 15:16:41
+CS2025_00041;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.;Name Validation;Success;01/20/2025 15:16:41
+CS2025_00042;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.;Email Validation;Success;01/20/2025 15:16:41
+CS2025_00042;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.;Name Validation;Success;01/20/2025 15:16:41
+CS2025_00043;Catherine; catherine.martin@example.com; General; What security features are included in your software?;Email Validation;Success;01/20/2025 15:16:41
+CS2025_00043;Catherine; catherine.martin@example.com; General; What security features are included in your software?;Name Validation;Success;01/20/2025 15:16:41
+CS2025_00044;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?;Email Validation;Success;01/20/2025 15:16:41
+CS2025_00044;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?;Name Validation;Success;01/20/2025 15:16:41
+CS2025_00045;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.;Email Validation;Success;01/20/2025 15:16:41
+CS2025_00045;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.;Name Validation;Success;01/20/2025 15:16:41
+CS2025_00046;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.;Email Validation;Success;01/20/2025 15:16:41
+CS2025_00046;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.;Name Validation;Success;01/20/2025 15:16:41
+CS2025_00039;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.; Python Sub Categories ;Success;;01/20/2025 15:16:46
+CS2025_00040;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.; Python Sub Categories ;Success;;01/20/2025 15:16:47
+CS2025_00041;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.; Python Sub Categories ;Success;;01/20/2025 15:16:47
+CS2025_00042;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.; Python Sub Categories ;Success;;01/20/2025 15:16:48
+CS2025_00043;Catherine; catherine.martin@example.com; General; What security features are included in your software?; Python Sub Categories ;Success;;01/20/2025 15:16:49
+CS2025_00044;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?; Python Sub Categories ;Success;;01/20/2025 15:16:49
+CS2025_00045;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.; Python Sub Categories ;Success;;01/20/2025 15:16:50
+CS2025_00046;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.; Python Sub Categories ;Success;;01/20/2025 15:16:51
+CS2025_00039;Alice; alice.johnson@example.com; Technical; Unable to log in to my account after recent update.;Additional Email sent;Success;;01/20/2025 15:16:55
+CS2025_00040;Amanda; amanda.king@example.com; Technical; I am getting frequent error messages on the desktop application.;Additional Email sent;Success;;01/20/2025 15:16:57
+CS2025_00041;Benjamin; benjamin.lewis@example.com; Billing; I was charged for a subscription I canceled last month.;Additional Email sent;Success;;01/20/2025 15:16:59
+CS2025_00042;Bob; bob.smith@example.com; Billing; Incorrect charge appeared on my credit card statement.;Additional Email sent;Success;;01/20/2025 15:17:01
+CS2025_00043;Catherine; catherine.martin@example.com; General; What security features are included in your software?;Additional Email sent;Success;;01/20/2025 15:17:03
+CS2025_00044;Clara; clara.martinez@example.com; General; Do you offer discounts for bulk purchases?;Additional Email sent;Success;;01/20/2025 15:17:04
+CS2025_00045;Daniel; daniel.turner@example.com; Technical; The system doesn't recognize my external hard drive.;Additional Email sent;Success;;01/20/2025 15:17:05
+CS2025_00046;David; david.lee@example.com; Technical; Website shows a 404 error when trying to access the support page.;Additional Email sent;Success;;01/20/2025 15:17:07

@@ -87,7 +87,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="827,1349" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1107,1349" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Default="[new Dictionary(of String, String)]" Name="dictConfig" />
     </Sequence.Variables>
@@ -116,9 +116,9 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Flowchart.StartNode>
-            <x:Reference>__ReferenceID5</x:Reference>
+            <x:Reference>__ReferenceID6</x:Reference>
           </Flowchart.StartNode>
-          <FlowStep x:Name="__ReferenceID5" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+          <FlowStep x:Name="__ReferenceID6" sap2010:WorkflowViewState.IdRef="FlowStep_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <av:Point x:Key="ShapeLocation">245,135</av:Point>
@@ -170,7 +170,7 @@
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <av:Point x:Key="ShapeLocation">245,365</av:Point>
-                        <av:PointCollection x:Key="ConnectorLocation">300,435 300,485</av:PointCollection>
+                        <av:PointCollection x:Key="ConnectorLocation">300,435 300,465 290,465 290,490</av:PointCollection>
                         <av:Size x:Key="ShapeSize">110,70</av:Size>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -189,36 +189,52 @@
                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;********Data Validation Ended********&quot;]" />
                     </Sequence>
                     <FlowStep.Next>
-                      <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_3">
+                      <FlowDecision x:Name="__ReferenceID5" sap2010:Annotation.AnnotationText="Flag comes from Config file, if value is 1 it sends  email of first part of Requirements (which includes only case ID). else if &quot;2&quot; it runs for updated flow requirement (Updated email with Case ID and generating subcategory by OpenAI)" DisplayName="Condition for which part of Process to run" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+                        <FlowDecision.Condition>
+                          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="dictConfig(&quot;PartOfProject&quot;).ToString.Equals(&quot;1&quot;)" />
+                        </FlowDecision.Condition>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <av:Point x:Key="ShapeLocation">245,485</av:Point>
-                            <av:Size x:Key="ShapeSize">110,70</av:Size>
-                            <av:PointCollection x:Key="ConnectorLocation">300,555 300,615</av:PointCollection>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <av:Point x:Key="ShapeLocation">260,490</av:Point>
+                            <av:Size x:Key="ShapeSize">60,60</av:Size>
+                            <av:PointCollection x:Key="TrueConnector">290,550 290,580 120,580 120,615</av:PointCollection>
+                            <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+                            <av:PointCollection x:Key="FalseConnector">320,520 330,520 330,615</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="SendMailsToCustomer" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;********Data Email To Customer Started********&quot;]" />
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Sending Email to Customer" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="SendEmailToCustomer.xaml">
-                            <ui:InvokeWorkflowFile.Arguments>
-                              <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="in_config">[dictConfig]</InArgument>
-                              <InArgument x:TypeArguments="x:String" x:Key="in_type">Initial Email</InArgument>
-                            </ui:InvokeWorkflowFile.Arguments>
-                          </ui:InvokeWorkflowFile>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;********Data Email To Customer Ended********&quot;]" />
-                        </Sequence>
-                        <FlowStep.Next>
+                        <FlowDecision.True>
+                          <FlowStep x:Name="__ReferenceID1" sap2010:WorkflowViewState.IdRef="FlowStep_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <av:Point x:Key="ShapeLocation">65,615</av:Point>
+                                <av:Size x:Key="ShapeSize">110,70</av:Size>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Sequence DisplayName="SendMailsToCustomer" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;********Data Email To Customer Started********&quot;]" />
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Sending Email to Customer" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="SendEmailToCustomer.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="in_config">[dictConfig]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="in_type">Initial Email</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;********Data Email To Customer Ended********&quot;]" />
+                            </Sequence>
+                          </FlowStep>
+                        </FlowDecision.True>
+                        <FlowDecision.False>
                           <FlowStep x:Name="__ReferenceID2" sap2010:WorkflowViewState.IdRef="FlowStep_5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <av:Point x:Key="ShapeLocation">245,615</av:Point>
+                                <av:Point x:Key="ShapeLocation">275,615</av:Point>
                                 <av:Size x:Key="ShapeSize">110,70</av:Size>
-                                <av:PointCollection x:Key="ConnectorLocation">300,685 300,755</av:PointCollection>
+                                <av:PointCollection x:Key="ConnectorLocation">330,685 330,735</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <Sequence DisplayName="SubcategoriesDecision" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_7">
@@ -236,31 +252,33 @@
                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="Info" Message="[&quot;********Data Subcategories Ended********&quot;]" />
                             </Sequence>
                             <FlowStep.Next>
-                              <FlowStep x:Name="__ReferenceID4" sap2010:WorkflowViewState.IdRef="FlowStep_1">
+                              <FlowStep x:Name="__ReferenceID4">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <av:Point x:Key="ShapeLocation">245,755</av:Point>
+                                    <av:Point x:Key="ShapeLocation">275,735</av:Point>
                                     <av:Size x:Key="ShapeSize">110,70</av:Size>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Sequence DisplayName="Additional Emails if subcategory is determined" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                <Sequence sap2010:Annotation.AnnotationText="Send Email with AI subcategory and also Additional emails to customer if sub category is not assigned or Description is empty." DisplayName="SendMailsToCustomer" sap:VirtualizedContainerService.HintSize="450,578" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmailToCustomer - Invoke Workflow File (SendEmailToCustomer.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="SendEmailToCustomer.xaml">
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;********Data Email To Customer Started********&quot;]" />
+                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Sending Email to Customer" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="SendEmailToCustomer.xaml">
                                     <ui:InvokeWorkflowFile.Arguments>
                                       <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="in_config">[dictConfig]</InArgument>
-                                      <InArgument x:TypeArguments="x:String" x:Key="in_type">Additional Emails</InArgument>
                                     </ui:InvokeWorkflowFile.Arguments>
                                   </ui:InvokeWorkflowFile>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;********Data Email To Customer Ended********&quot;]" />
                                 </Sequence>
                               </FlowStep>
                             </FlowStep.Next>
                           </FlowStep>
-                        </FlowStep.Next>
-                      </FlowStep>
+                        </FlowDecision.False>
+                      </FlowDecision>
                     </FlowStep.Next>
                   </FlowStep>
                 </FlowStep.Next>
@@ -272,6 +290,7 @@
           <x:Reference>__ReferenceID2</x:Reference>
           <x:Reference>__ReferenceID3</x:Reference>
           <x:Reference>__ReferenceID4</x:Reference>
+          <x:Reference>__ReferenceID5</x:Reference>
         </Flowchart>
       </TryCatch.Try>
       <TryCatch.Catches>
