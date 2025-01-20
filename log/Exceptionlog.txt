@@ -29,3 +29,7 @@ Data Scraping is Done at01/20/2025 15:10:12
 Data Validation is Done at01/20/2025 15:10:13
 Data Scraping is Done at01/20/2025 15:16:40
 Data Validation is Done at01/20/2025 15:16:41
+Data Scraping is Done at01/20/2025 16:42:08
+Data Validation is Done at01/20/2025 16:42:47
+Data Scraping is Done at01/20/2025 16:48:16
+Data Validation is Done at01/20/2025 16:48:17

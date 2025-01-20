@@ -21,7 +21,7 @@ The key features of the solution include:
 3. Personalized Email Automation: Sends acknowledgment emails to customers, including a unique case number and AI-generated subcategory for a tailored response.
 4. Data Logging: Records extracted and processed data in a structured format (CSV or database) for auditing and reporting purposes.
 5. Error Handling: Implements robust error-handling mechanisms to manage missing data, invalid inputs, and ambiguous issue descriptions.
-6. Additional documentation is avaible in project folder file name : "Betsson Group Customer Service Automation.docx"
+6. Additional documentation is avaible in project folder file name : "./Documentation/Betsson Group Customer Service Automation.docx"
 
 This document serves as a comprehensive guide to setting up and running the solution, covering the workflow design, AI integration, and any technical considerations. By following this documentation, users can replicate and deploy the workflow in their environments efficiently.
 
@@ -32,7 +32,7 @@ This document serves as a comprehensive guide to setting up and running the solu
 | 1   | [UI Path](https://docs.uipath.com/studio/standalone/2022.10/user-guide/install-studio)                            | LTS     |                                                                                                                         |
 | 2   | [Python](https://www.python.org/downloads/release/python-31011/)                                                  | 3.10.11 |                                                                                                                         |
 | 3   | [pip](https://pip.pypa.io/en/stable/installation/)                                                                | 24.3.1  |                                                                                                                         |
-| 4   | GSuite                                                                                                            |         | You can follow the guide [here](https://support.google.com/cloud/answer/6158849?hl=en) to setup your OAuth credentials. |
+| 4   | GSuite                                                                                                            |         | You can follow the guide [here](https://support.google.com/cloud/answer/6158849?hl=en) to setup your OAuth credentials and also go through "./Documentation/Configuration of Google Gsuite Service with Uipath.docx". |
 | 5   | [.NET](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-5.0.17-windows-x64-installer) | 5.0.17  |                                                                                                                         |
 | 6   | Miscrosoft Power BI                                                                                               |         | You can download it from [here](https://www.microsoft.com/en-us/download/details.aspx?id=58494).                        |
 | 7   | OpenAI API                                                                                                        |         | Create an account on OpenAI and get your API key. [Guide](https://platform.openai.com/api-keys)                         |
