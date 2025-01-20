@@ -22,6 +22,7 @@ The key features of the solution include:
 4. Data Logging: Records extracted and processed data in a structured format (CSV or database) for auditing and reporting purposes.
 5. Error Handling: Implements robust error-handling mechanisms to manage missing data, invalid inputs, and ambiguous issue descriptions.
 6. Additional documentation is avaible in project folder file name : "./Documentation/Betsson Group Customer Service Automation.docx"
+7. Data visualization: "./Data/Dashboard.,pbix" powerbi report is created, go through "./Documentation/Betsson Group Customer Service Automation.docx" after the automation is completed and setup powerbi.
 
 This document serves as a comprehensive guide to setting up and running the solution, covering the workflow design, AI integration, and any technical considerations. By following this documentation, users can replicate and deploy the workflow in their environments efficiently.
 
