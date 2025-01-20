@@ -119,7 +119,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Subcategories" sap:VirtualizedContainerService.HintSize="660,3038" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Subcategories" sap:VirtualizedContainerService.HintSize="1107,4801" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="StrCategory" />
     </Sequence.Variables>
@@ -128,7 +128,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sub Categories Generation" sap:VirtualizedContainerService.HintSize="660,3015" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sub Categories Generation" sap:VirtualizedContainerService.HintSize="680,4778" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="DtOpenAi" />
       </Sequence.Variables>
@@ -137,24 +137,24 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="626,2932" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="646,4695" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
-          <Sequence sap2010:Annotation.AnnotationText="Invoking Py Script,&#xA;Arguments: 1. Description of issue&#xA;                   2. Issue Category&#xA;                   3. OpenAi APi key&#xA;&#xA;" DisplayName="Try" sap:VirtualizedContainerService.HintSize="624,2161" sap2010:WorkflowViewState.IdRef="Sequence_16">
+          <Sequence sap2010:Annotation.AnnotationText="Invoking Py Script,&#xA;Arguments: 1. Description of issue&#xA;                   2. Issue Category&#xA;                   3. OpenAi APi key&#xA;&#xA;" DisplayName="Try" sap:VirtualizedContainerService.HintSize="644,3924" sap2010:WorkflowViewState.IdRef="Sequence_16">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[DtOpenAi]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="590,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="[in_Config(&quot;ValidatedData&quot;)]" />
-            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Ai Generated Sub Categories" DataTable="[DtOpenAi]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="590,221" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
-            <p:PythonScope DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="590,1652" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="[in_Config(&quot;PythonLibrary&quot;).ToString]" OperationTimeout="5000" Path="[in_Config(&quot;PythonAppPath&quot;).toString]" TargetPlatform="x64" Version="Python &gt;=3.10" WorkingFolder="[Environment.CurrentDirectory]">
+            <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[DtOpenAi]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="610,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="[in_Config(&quot;ValidatedData&quot;)]" />
+            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Ai Generated Sub Categories" DataTable="[DtOpenAi]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="610,221" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+            <p:PythonScope DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="610,3415" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="[in_Config(&quot;PythonLibrary&quot;).ToString]" OperationTimeout="5000" Path="[in_Config(&quot;PythonAppPath&quot;).toString]" TargetPlatform="x64" Version="Python &gt;=3.10" WorkingFolder="[Environment.CurrentDirectory]">
               <p:PythonScope.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,1592" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="576,3355" sap2010:WorkflowViewState.IdRef="Sequence_3">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="p:PythonObject" Name="LoadPy" />
                       <Variable x:TypeArguments="p:PythonObject" Name="ResultObj" />
@@ -165,7 +165,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="522,57" sap2010:WorkflowViewState.IdRef="LoadScript_1" Result="[LoadPy]" ScriptFile="[in_Config(&quot;PyScriptPath&quot;)]">
+                    <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="542,57" sap2010:WorkflowViewState.IdRef="LoadScript_1" Result="[LoadPy]" ScriptFile="[in_Config(&quot;PyScriptPath&quot;)]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -173,13 +173,13 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </p:LoadScript>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DtOpenAi]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="522,1161" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DtOpenAi]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="542,2924" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,979" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540,2742" sap2010:WorkflowViewState.IdRef="Sequence_5">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="result_List" />
                               <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="ListMatch" />
@@ -189,15 +189,15 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="486,919" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="506,2682" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                               <TryCatch.Try>
-                                <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="484,446" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="504,2209" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Sequence DisplayName="Data Manupulation for Prompt" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                  <Sequence DisplayName="Data Manupulation for Prompt" sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -355,7 +355,7 @@
                                       </If.Else>
                                     </If>
                                   </Sequence>
-                                  <p:InvokeMethod DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Instance="[LoadPy]" Name="[in_Config(&quot;PyMethod&quot;)]" Parameters="[{CurrentRow(&quot;Issue_Description&quot;),StrCategory,in_Config(&quot;OpenaiAPI&quot;)}]" Result="[ResultObj]">
+                                  <p:InvokeMethod DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Instance="[LoadPy]" Name="[in_Config(&quot;PyMethod&quot;)]" Parameters="[{CurrentRow(&quot;Issue_Description&quot;),StrCategory,in_Config(&quot;OpenaiAPI&quot;)}]" Result="[ResultObj]">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -363,7 +363,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </p:InvokeMethod>
-                                  <p:GetObject x:TypeArguments="x:Object" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="GetObject`1_1" PythonObject="[ResultObj]" Result="[result]">
+                                  <p:GetObject x:TypeArguments="x:Object" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="470,57" sap2010:WorkflowViewState.IdRef="GetObject`1_1" PythonObject="[ResultObj]" Result="[result]">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -371,15 +371,15 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </p:GetObject>
-                                  <If Condition="[result.ToString().Contains(&quot;&quot;&quot;&quot;)]" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="If_5">
+                                  <If Condition="[result.ToString().Contains(&quot;&quot;&quot;&quot;)]" sap:VirtualizedContainerService.HintSize="470,1820" sap2010:WorkflowViewState.IdRef="If_5">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <If.Then>
-                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,484" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,829" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -394,11 +394,35 @@
                                             <InArgument x:TypeArguments="x:String">[ListMatch.Last().Value.ToString]</InArgument>
                                           </Assign.Value>
                                         </Assign>
+                                        <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_17">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[result_list]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[result_list.Replace("Subcategory Suggestion:","")]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_18">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[result_list]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[result_list.ToString.Replace("Possible Subcategory:","")]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_19">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[result_list]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[result_list.ToString.Trim.Replace("""","")]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
                                         <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Ai Generated Sub Categories" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="434,217" sap2010:WorkflowViewState.IdRef="UpdateRowItem_1" Row="[CurrentRow]" Value="[result_list]" />
                                       </Sequence>
                                     </If.Then>
                                     <If.Else>
-                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,507" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,852" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:String" Name="StrResult" />
                                           <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="StrResultli" />
@@ -413,7 +437,15 @@
                                             <OutArgument x:TypeArguments="x:String">[StrResult]</OutArgument>
                                           </Assign.To>
                                           <Assign.Value>
-                                            <InArgument x:TypeArguments="x:String">[result.ToString.Trim.Replace("Subcategory Suggestion:","")]</InArgument>
+                                            <InArgument x:TypeArguments="x:String">[result.ToString]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_22">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[StrResult]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[StrResult.Replace("Subcategory Suggestion:","")]</InArgument>
                                           </Assign.Value>
                                         </Assign>
                                         <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_16">
@@ -421,14 +453,30 @@
                                             <OutArgument x:TypeArguments="x:String">[StrResult]</OutArgument>
                                           </Assign.To>
                                           <Assign.Value>
-                                            <InArgument x:TypeArguments="x:String">[result.ToString.Trim.Replace("Possible Subcategory:","")]</InArgument>
+                                            <InArgument x:TypeArguments="x:String">[strResult.Replace("Possible Subcategory:","")]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_20">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[StrResult]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[StrResult.Trim.Replace("""","")]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:String">[StrResult]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">[StrResult.Trim]</InArgument>
                                           </Assign.Value>
                                         </Assign>
                                         <ui:UpdateRowItem ColumnIndex="{x:Null}" ColumnName="Ai Generated Sub Categories" DisplayName="Update Row Item" sap:VirtualizedContainerService.HintSize="434,217" sap2010:WorkflowViewState.IdRef="UpdateRowItem_2" Row="[CurrentRow]" Value="[StrResult]" />
                                       </Sequence>
                                     </If.Else>
                                   </If>
-                                  <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_Config(&quot;DataScrappingLogPath&quot;)]" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[CurrentRow(&quot;CaseID&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Customer_Name&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Customer_Email&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Issue_Category&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Issue_Description&quot;).ToString+&quot;;&quot;+&quot; Python Sub Categories &quot;+&quot;;&quot;+&quot;Success&quot;+&quot;;&quot;+CurrentRow(&quot;Remarks&quot;).ToString.Trim+&quot;;&quot;+now.ToString]" UseDefaultEncoding="False">
+                                  <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_Config(&quot;DataScrappingLogPath&quot;)]" sap:VirtualizedContainerService.HintSize="470,158" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[CurrentRow(&quot;CaseID&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Customer_Name&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Customer_Email&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Issue_Category&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Issue_Description&quot;).ToString+&quot;;&quot;+&quot; Python Sub Categories &quot;+&quot;;&quot;+&quot;Success&quot;+&quot;;&quot;+CurrentRow(&quot;Remarks&quot;).ToString.Trim+&quot;;&quot;+now.ToString]" UseDefaultEncoding="False">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -444,13 +492,13 @@
                                     <ActivityAction.Argument>
                                       <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                                     </ActivityAction.Argument>
-                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,218" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="504,218" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_Config(&quot;DataScrappingLogPath&quot;)]" sap:VirtualizedContainerService.HintSize="450,158" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[CurrentRow(&quot;CaseID&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Customer_Name&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Customer_Email&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Issue_Category&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Issue_Description&quot;).ToString+&quot;;&quot;+&quot; Python Sub Categories &quot;+&quot;;&quot;+&quot;Failed&quot;+&quot;;&quot;+CurrentRow(&quot;Remarks&quot;).ToString.Trim+&quot;;&quot;+now.ToString]" UseDefaultEncoding="False">
+                                      <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="[in_Config(&quot;DataScrappingLogPath&quot;)]" sap:VirtualizedContainerService.HintSize="470,158" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[CurrentRow(&quot;CaseID&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Customer_Name&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Customer_Email&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Issue_Category&quot;).ToString+&quot;;&quot;+CurrentRow(&quot;Issue_Description&quot;).ToString+&quot;;&quot;+&quot; Python Sub Categories &quot;+&quot;;&quot;+&quot;Failed&quot;+&quot;;&quot;+CurrentRow(&quot;Remarks&quot;).ToString.Trim+&quot;;&quot;+now.ToString]" UseDefaultEncoding="False">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -463,7 +511,7 @@
                                 </Catch>
                               </TryCatch.Catches>
                               <TryCatch.Finally>
-                                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="484,90" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="504,90" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
