@@ -87,6 +87,7 @@ This document serves as a comprehensive guide to setting up and running the solu
 1. Open `main.xaml` in UIPath Studio.
 2. Go To `Design` tab and click on `Run` button.
 3. Wait until the automation process is completed.
+4. Email can be seen in Drafs folder of Gmail.(as emails are not actual emails)
 
 ### Outputs
 
