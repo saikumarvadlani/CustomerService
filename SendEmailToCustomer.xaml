@@ -125,13 +125,13 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendEmailToCustomer" sap:VirtualizedContainerService.HintSize="775,1026" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SendEmailToCustomer" sap:VirtualizedContainerService.HintSize="1107,5495" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sending Emails" sap:VirtualizedContainerService.HintSize="556,1003" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Sending Emails" sap:VirtualizedContainerService.HintSize="684,5472" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="DtEmail" />
       </Sequence.Variables>
@@ -140,16 +140,16 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="522,920" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="650,5389" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <TryCatch.Try>
-          <Sequence sap2010:Annotation.AnnotationText="sending Emails based on type of email.&#xA;Additional Email : this is for asking additional information &#xA;Initial Email: this is for sending acknowlagement email with Case ID based of flag set in Config" DisplayName="Try" sap:VirtualizedContainerService.HintSize="452,474" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence sap2010:Annotation.AnnotationText="sending Emails based on type of email.&#xA;Additional Email : this is for asking additional information &#xA;Initial Email: this is for sending acknowlagement email with Case ID based of flag set in Config" DisplayName="Try" sap:VirtualizedContainerService.HintSize="648,4969" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:IfElseIfV2 Condition="[in_Config(&quot;PartOfProject&quot;).trim.Equals(&quot;2&quot;)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="418,57" sap2010:WorkflowViewState.IdRef="IfElseIfV2_3">
+            <ui:IfElseIfV2 Condition="[in_Config(&quot;PartOfProject&quot;).trim.Equals(&quot;2&quot;)]" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="614,529" sap2010:WorkflowViewState.IdRef="IfElseIfV2_3">
               <ui:IfElseIfV2.Else>
                 <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,171" sap2010:WorkflowViewState.IdRef="Sequence_22">
                   <sap:WorkflowViewStateService.ViewState>
@@ -165,7 +165,7 @@
               </ui:IfElseIfV2.ElseIfs>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -180,19 +180,35 @@
                 </Sequence>
               </ui:IfElseIfV2.Then>
             </ui:IfElseIfV2>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DtEmail]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="418,281" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+            <ui:FilterDataTable DataTable="[DtEmail]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="614,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[DtEmail]" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="NOTEMPTY">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["Remarks"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DtEmail]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="614,4125" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="612,3952" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemFullPath="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" BrowserRuntimeItemFriendlyName="{x:Null}" BrowserRuntimeItemFullPath="{x:Null}" BrowserRuntimeItemId="{x:Null}" BrowserRuntimeParentItemId="{x:Null}" BucketId="{x:Null}" BucketName="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" Folder="{x:Null}" ManualRuntimeItemFullPath="{x:Null}" SecureCredentialSecret="{x:Null}" ServiceAccountEmail="{x:Null}" TimeoutMS="{x:Null}" UserEmail="{x:Null}" AuthenticationType="OAuthClientID" BucketInputMode="Browse" ConfigLocation="PropertiesPanel" CredentialID="[in_config(&quot;GmailClientID&quot;).Trim]" CredentialSecret="[in_config(&quot;GmailClientSecret&quot;).Trim]" DataStoreLocation="DISK" DisplayName="GSuite Application Scope" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_4" KeyPath="Data\betsson-group-d3e39a77eb18.json" KeyType="JSON" OAuthClient="CUSTOM" Password="notasecret" RuntimeItemInputMode="Browse" Services="Unselected" UseConnectionService="False" User="PleaseSelectAnAccountId">
+                    <uga:GSuiteApplicationScope Account="{x:Null}" ApiKey="{x:Null}" BrowserItemFriendlyName="{x:Null}" BrowserItemFullPath="{x:Null}" BrowserItemId="{x:Null}" BrowserParentItemId="{x:Null}" BrowserRuntimeItemFriendlyName="{x:Null}" BrowserRuntimeItemFullPath="{x:Null}" BrowserRuntimeItemId="{x:Null}" BrowserRuntimeParentItemId="{x:Null}" BucketId="{x:Null}" BucketName="{x:Null}" ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Connector="{x:Null}" ContinueOnError="{x:Null}" Folder="{x:Null}" ManualRuntimeItemFullPath="{x:Null}" SecureCredentialSecret="{x:Null}" ServiceAccountEmail="{x:Null}" TimeoutMS="{x:Null}" UserEmail="{x:Null}" AuthenticationType="OAuthClientID" BucketInputMode="Browse" ConfigLocation="PropertiesPanel" CredentialID="[in_config(&quot;GmailClientID&quot;).Trim]" CredentialSecret="[in_config(&quot;GmailClientSecret&quot;).Trim]" DataStoreLocation="DISK" DisplayName="GSuite Application Scope" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="578,3892" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_4" KeyPath="Data\betsson-group-d3e39a77eb18.json" KeyType="JSON" OAuthClient="CUSTOM" Password="notasecret" RuntimeItemInputMode="Browse" Services="Unselected" UseConnectionService="False" User="PleaseSelectAnAccountId">
                       <uga:GSuiteApplicationScope.AuthenticationScopes>
                         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
                           <InArgument x:TypeArguments="x:String">https://mail.google.com/</InArgument>
@@ -248,7 +264,7 @@
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                         </Assign>
-                                        <uga:SendEmail AttachmentList="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" AuthScopesInvalid="False" Body="[&quot;&lt;/head&gt;&#xD;&#xA;&lt;body&gt;&#xD;&#xA;    &lt;p&gt;Dear &quot;+CurrentRow(1).ToString+&quot;,&lt;/p&gt;&#xD;&#xA;    &lt;p&gt;Thank you For your patience. We have successfully received your Case And will process it promptly. If you have any further questions Or updates, please feel free To reach Out.&lt;/p&gt;&#xD;&#xA;    &lt;p&gt; Case ID : &quot;+CurrentRow(0).ToString+&quot; &lt;/p&gt;&#xD;&#xA;&#x9;&lt;p&gt;Best regards,&lt;/p&gt;&#xD;&#xA;    &lt;p&gt;RPA Bot / Customer Service&lt;/p&gt;&#xD;&#xA;&lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&quot;]" DisplayName="Send Mail Message" sap:VirtualizedContainerService.HintSize="434,374" sap2010:WorkflowViewState.IdRef="SendEmail_1" IsDraft="True" IsHTML="True" Subject="[StrSubject]" To="[{CurrentRow(2).ToString}]">
+                                        <uga:SendEmail AttachmentList="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" AuthScopesInvalid="False" Body="[&quot;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;    &lt;p&gt;Dear &quot;+CurrentRow(1).ToString+&quot;,&lt;/p&gt;&#xA;    &lt;p&gt;Thank you For your patience. We have successfully received your Case And will process it promptly. If you have any further questions Or updates, please feel free To reach Out.&lt;/p&gt;&#xA;    &lt;p&gt; Case ID : &quot;+CurrentRow(0).ToString+&quot; &lt;/p&gt;&#xA;&#x9;&lt;p&gt;Best regards,&lt;/p&gt;&#xA;    &lt;p&gt;RPA Bot / Customer Service&lt;/p&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;&quot;]" DisplayName="Send Mail Message" sap:VirtualizedContainerService.HintSize="434,374" sap2010:WorkflowViewState.IdRef="SendEmail_1" IsDraft="True" IsHTML="True" Subject="[StrSubject]" To="[{CurrentRow(2).ToString}]">
                                           <uga:SendEmail.Attachments>
                                             <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                                           </uga:SendEmail.Attachments>
@@ -455,7 +471,7 @@
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
                                               </Assign>
-                                              <uga:SendEmail AttachmentList="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" AuthScopesInvalid="False" Body="[&quot;&lt;/head&gt;&#xD;&#xA;&lt;body&gt;&#xD;&#xA;    &lt;p&gt;Dear &quot;+CurrentRow(1).ToString+&quot;,&lt;/p&gt;&#xD;&#xA;    &lt;p&gt;Thank you For your patience. We have successfully received your Case and assigned to team which handels &quot;+CurrentRow(3).ToString+&quot; - &quot;+CurrentRow(6).ToString+&quot;. If you have any further questions Or updates, please feel free To reach Out.&lt;/p&gt;&#xD;&#xA;    &lt;p&gt; Case ID : &quot;+CurrentRow(0).ToString+&quot; &lt;/p&gt;&#xD;&#xA;&#x9;&lt;p&gt;Best regards,&lt;/p&gt;&#xD;&#xA;    &lt;p&gt;RPA Bot / Customer Service&lt;/p&gt;&#xD;&#xA;&lt;/body&gt;&#xD;&#xA;&lt;/html&gt;&quot;]" DisplayName="Send Mail Message" sap:VirtualizedContainerService.HintSize="434,374" sap2010:WorkflowViewState.IdRef="SendEmail_3" IsDraft="True" IsHTML="True" Subject="[StrSubject]" To="[{CurrentRow(2).ToString}]">
+                                              <uga:SendEmail AttachmentList="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" AuthScopesInvalid="False" Body="[&quot;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;    &lt;p&gt;Dear &quot;+CurrentRow(1).ToString+&quot;,&lt;/p&gt;&#xA;    &lt;p&gt;Thank you For your patience. We have successfully received your Case and assigned to team which handels &quot;+CurrentRow(3).ToString+&quot; - &quot;+CurrentRow(6).ToString+&quot;. If you have any further questions Or updates, please feel free To reach Out.&lt;/p&gt;&#xA;    &lt;p&gt; Case ID : &quot;+CurrentRow(0).ToString+&quot; &lt;/p&gt;&#xA;&#x9;&lt;p&gt;Best regards,&lt;/p&gt;&#xA;    &lt;p&gt;RPA Bot / Customer Service&lt;/p&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;&quot;]" DisplayName="Send Mail Message" sap:VirtualizedContainerService.HintSize="434,374" sap2010:WorkflowViewState.IdRef="SendEmail_3" IsDraft="True" IsHTML="True" Subject="[StrSubject]" To="[{CurrentRow(2).ToString}]">
                                                 <uga:SendEmail.Attachments>
                                                   <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                                                 </uga:SendEmail.Attachments>
@@ -535,7 +551,7 @@
                       </uga:GSuiteApplicationScope.RuntimeItemFullPathBackup>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
@@ -558,14 +574,14 @@
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,165" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="648,165" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;*********Unknown Error in Sending Emails*************&quot;]">
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="614,57" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;*********Unknown Error in Sending Emails*************&quot;]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
