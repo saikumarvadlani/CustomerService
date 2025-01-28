@@ -26,7 +26,6 @@
         "StrSubject&Sequence_3"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_type",
         "in_config"
       ],
       "ConstantsSectionElementsOrder": [],

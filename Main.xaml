@@ -104,7 +104,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Flowchart sap2010:Annotation.AnnotationText="Customer Service Automation Flow" sap:VirtualizedContainerService.HintSize="600,656" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+        <Flowchart sap2010:Annotation.AnnotationText="Customer Service Automation Flow" sap:VirtualizedContainerService.HintSize="1124,617.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -189,10 +189,7 @@
                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;********Data Validation Ended********&quot;]" />
                     </Sequence>
                     <FlowStep.Next>
-                      <FlowDecision x:Name="__ReferenceID5" sap2010:Annotation.AnnotationText="Flag comes from Config file, if value is 1 it sends  email of first part of Requirements (which includes only case ID). else if &quot;2&quot; it runs for updated flow requirement (Updated email with Case ID and generating subcategory by OpenAI)" DisplayName="Condition for which part of Process to run" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
-                        <FlowDecision.Condition>
-                          <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="dictConfig(&quot;PartOfProject&quot;).ToString.Equals(&quot;1&quot;)" />
-                        </FlowDecision.Condition>
+                      <FlowDecision x:Name="__ReferenceID5" sap2010:Annotation.AnnotationText="Flag comes from Config file, if value is 1 it sends  email of first part of Requirements (which includes only case ID). else if &quot;2&quot; it runs for updated flow requirement (Updated email with Case ID and generating subcategory by OpenAI)" Condition="[dictConfig(&quot;PartOfProject&quot;).ToString.Equals(&quot;1&quot;)]" DisplayName="Condition for which part of Process to run" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -211,7 +208,7 @@
                                 <av:Size x:Key="ShapeSize">110,70</av:Size>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Sequence DisplayName="SendMailsToCustomer" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                            <Sequence DisplayName="SendMailsToCustomer" sap:VirtualizedContainerService.HintSize="450,578" sap2010:WorkflowViewState.IdRef="Sequence_17">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -221,7 +218,6 @@
                               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Sending Email to Customer" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="SendEmailToCustomer.xaml">
                                 <ui:InvokeWorkflowFile.Arguments>
                                   <InArgument x:TypeArguments="scg:Dictionary(x:String, x:String)" x:Key="in_config">[dictConfig]</InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="in_type">Initial Email</InArgument>
                                 </ui:InvokeWorkflowFile.Arguments>
                               </ui:InvokeWorkflowFile>
                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Info" Message="[&quot;********Data Email To Customer Ended********&quot;]" />
@@ -259,7 +255,7 @@
                                     <av:Size x:Key="ShapeSize">110,70</av:Size>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Sequence sap2010:Annotation.AnnotationText="Send Email with AI subcategory and also Additional emails to customer if sub category is not assigned or Description is empty." DisplayName="SendMailsToCustomer" sap:VirtualizedContainerService.HintSize="450,578" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                <Sequence sap2010:Annotation.AnnotationText="Send Email with AI subcategory and also Additional emails to customer if sub category is not assigned or Description is empty." DisplayName="SendMailsToCustomer" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
